@@ -1,0 +1,115 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\lalan\\source\\repos\\ZuramaruBot\\ZuramaruBot\\ZuramaruBot.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\lalan\\source\\repos\\ZuramaruBot\\ZuramaruBot\\ZuramaruBot.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lalan\\source\\repos\\ZuramaruBot\\ZuramaruBot\\ZuramaruBot.csproj",
+        "projectName": "ZuramaruBot",
+        "projectPath": "C:\\Users\\lalan\\source\\repos\\ZuramaruBot\\ZuramaruBot\\ZuramaruBot.csproj",
+        "packagesPath": "C:\\Users\\lalan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lalan\\source\\repos\\ZuramaruBot\\ZuramaruBot\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lalan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/discord-net/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Discord.Addons.InteractiveCommands": {
+              "target": "Package",
+              "version": "[1.2.4, )"
+            },
+            "Discord.Net": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Discord.Net.Commands": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Discord.Net.Core": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Discord.Net.Rest": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Discord.Net.WebSocket": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Discord.Net.Webhook": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Google.Apis": {
+              "target": "Package",
+              "version": "[1.48.0, )"
+            },
+            "Google.Apis.Auth": {
+              "target": "Package",
+              "version": "[1.48.0, )"
+            },
+            "Google.Apis.Core": {
+              "target": "Package",
+              "version": "[1.48.0, )"
+            },
+            "Google.Apis.Oauth2.v2": {
+              "target": "Package",
+              "version": "[1.48.0.1869, )"
+            },
+            "Google.Apis.YouTube.v3": {
+              "target": "Package",
+              "version": "[1.47.0.2008, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
