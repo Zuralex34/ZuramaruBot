@@ -4735,11 +4735,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lalan\\source\\repos\\ZuramaruBot\\ZuramaruBot\\ZuramaruBot.csproj",
+      "projectUniqueName": "D:\\GitHub\\ZuramaruBot\\ZuramaruBot\\ZuramaruBot.csproj",
       "projectName": "ZuramaruBot",
-      "projectPath": "C:\\Users\\lalan\\source\\repos\\ZuramaruBot\\ZuramaruBot\\ZuramaruBot.csproj",
+      "projectPath": "D:\\GitHub\\ZuramaruBot\\ZuramaruBot\\ZuramaruBot.csproj",
       "packagesPath": "C:\\Users\\lalan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lalan\\source\\repos\\ZuramaruBot\\ZuramaruBot\\obj\\",
+      "outputPath": "D:\\GitHub\\ZuramaruBot\\ZuramaruBot\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lalan\\AppData\\Roaming\\NuGet\\NuGet.Config",

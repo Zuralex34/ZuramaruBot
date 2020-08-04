@@ -18,6 +18,7 @@ namespace ZuramaruBot.Modules.YouTube
 {
     public class HoloLive : ModuleBase
     {
+
         [Command("hl")]
         private async Task HL(string channel)
         {
@@ -75,10 +76,12 @@ namespace ZuramaruBot.Modules.YouTube
             if (channel == "live")
             {
                 Live(Hololive);
+                return;
             }
             else
             {
                 Run(channel);
+                return;
             }
         }
 
@@ -98,7 +101,7 @@ namespace ZuramaruBot.Modules.YouTube
                 searchListRequest.Type = "video";
                 searchListRequest.EventType = SearchResource.ListRequest.EventTypeEnum.Live;
                 searchListRequest.MaxResults = 1;
-                var searchListResponse = await searchListRequest.ExecuteAsync();
+                var searchListResponse = await searchListRequest.ExecuteAsync().ConfigureAwait(false);
                 if (searchListResponse.Items.Count == 1)
                 {
                     live = live + channel.Split("=")[2] + "\n";
@@ -139,10 +142,11 @@ namespace ZuramaruBot.Modules.YouTube
             searchListRequest.EventType = SearchResource.ListRequest.EventTypeEnum.Live;
             searchListRequest.MaxResults = 1;
 
-            var searchListResponse = await searchListRequest.ExecuteAsync();
+            var searchListResponse = await searchListRequest.ExecuteAsync().ConfigureAwait(false);
 
-            List<string> videos = new List<string>();
-            List<string> images = new List<string>();
+
+            string video = null;
+            string ThumbnailUrl = null;
 
             if (searchListResponse.Items.Count == 0)
             {
@@ -160,14 +164,16 @@ namespace ZuramaruBot.Modules.YouTube
                     switch (searchResult.Id.Kind)
                     { 
                         case "youtube#video":
-                            videos.Add(String.Format("{0}", searchResult.Id.VideoId));
+                            video = searchResult.Id.VideoId;
+                            ThumbnailUrl = searchResult.Snippet.Thumbnails.High.Url;
                             break;
                     }
                 }
 
                 var embed = new EmbedBuilder();
                 embed.WithTitle("Live :")
-                    .WithDescription(String.Format("https://www.youtube.com/watch?v={0}", string.Join("\n", videos)))
+                    .WithDescription("https://www.youtube.com/watch?v=" + video)
+                    .WithImageUrl(ThumbnailUrl)
                     .WithColor(Color.Gold);
                 await ReplyAsync("", false, embed.Build());
             }

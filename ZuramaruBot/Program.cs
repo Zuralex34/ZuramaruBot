@@ -26,7 +26,7 @@ namespace ZuramaruBot
                 .AddSingleton(_commands)
                 .BuildServiceProvider();
 
-            string token = "NDA0MzIzOTEwNzcxOTMzMTg1.WmN5_A._WORBOR6maUnw1-FBXKqnf9LtOo";
+            string token = "NDA0MzIzOTEwNzcxOTMzMTg1.WmN5_A.xY3vJ9C4gdgPvTXYBZriQlraUo8";
 
             _client.Log += _client_Log;
             _client.MessageReceived += MessageReceivedAsync;

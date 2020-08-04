@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fRRuy51kSIGlaKGJoGIOgZqYTTWEvgsYi3AMry93ccwARV5hiP8D4wU0907D6vbTGPi83JuIsZuUZTOeWTUMyQ==",
+  "dgSpecHash": "UDsntfWCvaH2W88x18mWCc8wj051m1U3ok8TldBj82hRu88bpKS9mj7/P4fTBKkIu9V/aZk+dESvPkabCjvNvg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lalan\\source\\repos\\ZuramaruBot\\ZuramaruBot\\ZuramaruBot.csproj",
+  "projectFilePath": "D:\\GitHub\\ZuramaruBot\\ZuramaruBot\\ZuramaruBot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lalan\\.nuget\\packages\\discord.addons.interactivecommands\\1.2.4\\discord.addons.interactivecommands.1.2.4.nupkg.sha512",
     "C:\\Users\\lalan\\.nuget\\packages\\discord.net\\2.2.0\\discord.net.2.2.0.nupkg.sha512",
